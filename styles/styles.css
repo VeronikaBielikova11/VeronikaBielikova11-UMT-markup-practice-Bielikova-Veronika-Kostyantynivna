@@ -1,0 +1,877 @@
+@import './reset.css';
+@import './colors.css';
+
+html:has(body.menu-open) {
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 150%;
+}
+.title_wrapper {
+  padding: 38px 0;
+}
+.section_wrapper {
+  padding: 64px 0;
+}
+.container {
+  padding: 0;
+  margin: 0 auto;
+  width: 335px;
+}
+.header_container {
+  max-width: 334px;
+  margin-right: auto;
+}
+.logo {
+  width: 74px;
+  height: 35px;
+}
+.header_container .main_title {
+  padding-top: 38px;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header {
+  padding: 12px 0;
+  max-height: 72px;
+}
+.header_button {
+  display: none;
+}
+.menu_button {
+  padding: 0;
+  display: flex;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  background: transparent;
+  justify-items: center;
+  justify-content: center;
+}
+.menu_icon {
+  width: 24px;
+  height: 24px;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.navigation_list {
+  display: none;
+}
+.navigation_animation li:hover {
+  animation-name: pulse;
+  animation-duration: 1s;
+}
+.general_link:hover,
+.general_link:focus-visible {
+  opacity: 60%;
+}
+.general_link:active {
+  opacity: 40%;
+}
+.general_link:disabled,
+.general_link[disabled] {
+  opacity: 20%;
+  cursor: auto;
+}
+#introduction .container {
+  margin: 0 auto;
+}
+.florist_img {
+  width: 335px;
+  height: 428px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+.florist_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main_text {
+  margin-top: 24px;
+  margin-bottom: 32px;
+  max-width: 247px;
+}
+.text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+.florist_text {
+  padding-bottom: 24px;
+}
+.location_text {
+  margin-bottom: 40px;
+}
+.tulip_item {
+  padding-top: 0px;
+}
+.main_title {
+  font-family: 'Hanuman', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -1%;
+  max-width: 243px;
+}
+.section_title {
+  font-family: 'Hanuman', sans-serif;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 120%;
+  letter-spacing: -1%;
+}
+.top-selling-bouquets_title {
+  font-size: 32px;
+}
+.price {
+  font-size: 20px;
+  margin-bottom: 53px;
+}
+.background_content {
+  background-color: var(--image_background);
+  background-image: url('../images/hero_bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1440px;
+  height: 510px;
+  margin: 0 auto;
+}
+.explore_bouquets_button {
+  font-weight: 500;
+  font-size: 16px;
+  padding: 8px 104px;
+  border-radius: 100px;
+  background: var(--button_bg);
+  transition: background-color 250ms ease-in-out;
+  white-space: nowrap;
+}
+.explore_our_bouquets_button {
+  padding: 10px 83px;
+}
+.explore_bouquets_button:hover,
+.explore_bouquets_button:focus-visible {
+  background: var(--button_bg);
+  opacity: 50%;
+}
+.explore_bouquets_button:active {
+  background: var(--button_bg_clicked);
+}
+.explore_bouquets_button:disabled,
+.explore_bouquets_button[disabled] {
+  background: var(--button_bg);
+  opacity: 20%;
+  cursor: auto;
+}
+.introduction_description {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 600px;
+}
+.bestsellers_section_title {
+  margin-bottom: 32px;
+  max-width: 768px;
+}
+.bestsellers_list li {
+  width: 335px;
+  margin: 0 auto;
+}
+.bestseller2 {
+  display: none;
+}
+.bestseller3 {
+  display: none;
+}
+.section_subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0%;
+}
+.bouquet_description {
+  font-size: 14px;
+  max-width: 335px;
+  margin-bottom: 8px;
+}
+.catalogue_title {
+  margin-bottom: 8px;
+  text-align: center;
+}
+.catalogue_text {
+  margin-bottom: 32px;
+  text-align: center;
+}
+.catalogue_list_item {
+  width: 335px;
+  margin: 0 auto;
+}
+.center_text {
+  text-align: center;
+}
+.bouquet_description_center_list {
+  font-size: 14px;
+  max-width: 335px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.bouquet_image {
+  margin-bottom: 16px;
+  width: 335px;
+}
+.span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.span_arrow_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.arrow_button {
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  gap: 16px;
+  opacity: 1;
+  border-radius: 100px;
+  border-width: 1px;
+  border: 1px solid var(--span_border_line);
+  background-color: var(--arrow_background);
+}
+.arrow_button:hover,
+.arrow_button:focus-visible {
+  background: var(--arrow_button_hv);
+  border-color: var(--arrow_border);
+  border-width: 1px;
+}
+.arrow_button:active {
+  background: var(--arrow_button_active);
+  border-color: var(--arrow_border);
+  border-width: 1px;
+}
+.arrow_button:disabled,
+.arrow_button[disabled] {
+  opacity: 30%;
+  background-color: var(--arrow_background);
+  border-color: var(--arrow_border);
+}
+.arrow_button_list {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+}
+.show_more_button {
+  width: 340px;
+  padding: 10px 129px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.catalogue_list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.price_bouquet_first_row {
+  font-size: 20px;
+  text-align: center;
+}
+.price_bouquet_second_row {
+  font-size: 20px;
+  text-align: center;
+}
+.feedback {
+  margin-bottom: 32px;
+}
+.feedback_list {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  max-width: 352px;
+  margin-bottom: 86px;
+}
+.feedback_li {
+  border: 1px solid var(--feedback_border);
+  border-radius: 16px;
+  padding: 32px;
+}
+.feedback_item_2 {
+  display: none;
+}
+.feedback_item_3 {
+  display: none;
+}
+.client_name {
+  font-size: 16px;
+  gap: 32px;
+  font-weight: 600;
+}
+.contacts {
+  font-family: Hanuman;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: -1%;
+}
+.store {
+  font-size: 16px;
+  letter-spacing: 0%;
+}
+.number {
+  font-size: 16px;
+  letter-spacing: 0%;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 0%;
+}
+.phone_number {
+  padding-top: 8px;
+}
+.shared_connect {
+  margin-bottom: 16px;
+}
+.shared_title {
+  margin-bottom: 24px;
+}
+.shared_description {
+  margin-bottom: 24px;
+}
+.contact_header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.contact_item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.florist_footer_img {
+  width: 335px;
+  height: 312px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.logo_footer {
+  width: 335px;
+  height: 126px;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.footer {
+  background-position: center;
+  margin: 0 auto;
+  height: 691px;
+  background-color: var(--footer_bg);
+  background-size: 375px;
+  padding-top: 48px;
+}
+.footer_actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid var(--span_border_line);
+  gap: 32px;
+  margin-bottom: 32px;
+}
+.footer_navigation_list {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-direction: column;
+}
+.footer_navigation_link {
+  padding: 8px 0;
+}
+.footer_socials {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  padding-bottom: 32px;
+}
+.footer_caption {
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Mobile menu */
+
+.mobile_menu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+
+  margin-top: 64px;
+  height: calc(100vh - 64px);
+  width: 100vw;
+  z-index: 2;
+  padding: 16px 20px;
+  overflow: auto;
+  transition: transform 250ms ease-in-out;
+  background-color: #ffffff;
+}
+
+.mobile_menu.is-open {
+  transform: translateX(0);
+}
+.menu_navigation {
+  margin-bottom: 24px;
+}
+.menu_navigation_list {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+
+.menu_navigation_link {
+  padding: 8px 0;
+}
+.burger_explore_bouquets_button {
+  width: 100%;
+  max-width: 335px;
+  margin: 0 auto;
+}
+.menu_icon_close {
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+}
+
+.menu_icon_burger {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out;
+}
+.menu_button.is-open .menu_icon_close {
+  opacity: 1;
+}
+
+.menu_button.is-open .menu_icon_burger {
+  opacity: 0;
+}
+
+/* Tablet styles */
+@media screen and (min-width: 768px) {
+  .background_content {
+    background-color: var(--image_background);
+    background-image: url('../images/hero_bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1440px;
+    height: 510px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  .title_wrapper {
+    padding: 32px 48px;
+  }
+  .header_container {
+    max-width: 375px;
+    padding: 0 12px;
+    margin-right: auto;
+  }
+  .header_button {
+    display: flex;
+  }
+  .header_actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .container {
+    width: 704px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .main_text {
+    max-width: 340px;
+  }
+  .main_title {
+    font-size: 34px;
+    max-width: 349px;
+  }
+  .florist_text {
+    padding-bottom: 39px;
+    min-width: 340px;
+  }
+  .florist_img {
+    width: 340px;
+  }
+
+  .tulip_item {
+    padding-top: 22px;
+  }
+  .price {
+    font-size: 20px;
+    margin-bottom: 69px;
+  }
+  .background_content {
+    height: 669px;
+  }
+  .explore_bouquets_button {
+    padding: 8px 20px;
+  }
+  .explore_our_bouquets_button {
+    padding: 10px 24px;
+  }
+  .introduction_description {
+    width: 340px;
+  }
+  #introduction .container {
+    justify-content: center;
+  }
+  #introduction .container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-direction: row;
+  }
+  .bestsellers_list li {
+    width: 340px;
+    margin: 0;
+  }
+  .bestsellers_list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+  }
+  .bestseller2 {
+    display: block;
+  }
+  .bouquet_description {
+    max-width: 340px;
+  }
+  .bouquet_image {
+    width: 340px;
+  }
+  .catalogue_list {
+    display: flex;
+    margin-bottom: 40px;
+    gap: 24px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .catalogue_list_item {
+    width: 340px;
+    margin: 0;
+  }
+  .feedback {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 32px;
+    justify-content: center;
+  }
+  .feedback_list {
+    margin-bottom: 59px;
+  }
+  .feedback_item_2 {
+    display: block;
+  }
+  .icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+  .contacts_left {
+    min-width: 340px;
+  }
+  .contacts_right .contact_item {
+    width: 340px;
+  }
+  .contacts_top {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 0px;
+  }
+
+  .shared_description {
+    margin-bottom: 32px;
+  }
+  .florist_footer_img {
+    width: 704px;
+    height: 396px;
+  }
+  .footer {
+    height: 451px;
+    padding: 48px 32px;
+    background-size: 768px;
+  }
+  .logo_footer {
+    width: 294px;
+    height: 125px;
+  }
+  .footer_actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+  }
+  .footer_navigation_list {
+    gap: 32px;
+    flex-direction: row;
+  }
+  .footer_socials {
+    gap: 12px;
+    padding-bottom: 32px;
+  }
+
+  /* Mobile menu */
+
+  .mobile_menu {
+    padding-left: 33px;
+    padding-right: 33px;
+  }
+
+  .burger_explore_bouquets_button {
+    max-width: fit-content;
+  }
+  body.menu-open .header_button {
+    display: none;
+  }
+}
+
+/* Desktop styles */
+@media screen and (min-width: 1440px) {
+  .header {
+    padding: 16px 0;
+  }
+  .container {
+    width: 1312px;
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+  .header_container {
+    max-width: 667px;
+    padding: 0 16px;
+    margin-right: auto;
+  }
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+  }
+  .header_button {
+    display: block;
+  }
+  .background_content {
+    height: 669px;
+  }
+  .menu_button {
+    display: none;
+  }
+  .navigation_list {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  .navigation {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navigation_list_link {
+    padding: 8px 0;
+  }
+
+  .main_title {
+    font-size: 56px;
+    max-width: 811px;
+  }
+  .main_text {
+    max-width: 811px;
+  }
+  .section_title {
+    font-size: 48px;
+  }
+  .florist_text {
+    padding-bottom: none;
+  }
+  .florist_img {
+    width: 600px;
+  }
+  .location_text {
+    margin-bottom: none;
+  }
+  .explore_bouquets_button {
+    padding: 8px 20px;
+  }
+  .explore_our_bouquets_button {
+    padding: 10px 24px;
+  }
+  #introduction .container {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    flex-direction: row;
+  }
+  .introduction_description {
+    width: 600px;
+  }
+  .title_wrapper {
+    padding: 191px 0;
+  }
+  .section_wrapper {
+    padding: 92px 0;
+  }
+  .bestsellers_list {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 48px;
+  }
+  .bestseller2 {
+    display: block;
+  }
+  .bestseller3 {
+    display: block;
+  }
+  .bestsellers_list li {
+    width: 405px;
+  }
+  .bouquet_image {
+    width: 405px;
+  }
+  .price {
+    font-size: 20px;
+    margin-bottom: 48px;
+  }
+  .bouquet_description {
+    max-width: 405px;
+  }
+  .catalogue_list {
+    display: flex;
+    margin-bottom: 40px;
+    gap: 32px;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .catalogue_list_item {
+    width: 296px;
+  }
+  .tulip_item {
+    padding-top: 22px;
+  }
+  .price_bouquet_first_row {
+    font-size: 20px;
+    margin-bottom: 64px;
+    text-align: center;
+  }
+  .bouquet_description_center_list {
+    font-size: 14px;
+    max-width: 405px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .show_more_button {
+    width: 406px;
+    padding: 10px 24px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .feedback {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+  .feedback_list_olivia {
+    margin-bottom: 59px;
+  }
+  .feedback_item_2 {
+    display: block;
+  }
+  .feedback_item_3 {
+    display: block;
+  }
+  .shared_description {
+    margin-bottom: 37px;
+  }
+  .contacts_left {
+    max-width: 700px;
+  }
+  .contacts_right {
+    max-width: 500px;
+  }
+  .contacts_top {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-bottom: 0px;
+  }
+  .footer_actions {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    padding-bottom: 80px;
+    margin-bottom: 32px;
+  }
+  .footer {
+    max-width: 1440px;
+    background-position: center;
+    margin: 0 auto;
+    height: 419px;
+    background-color: var(--footer_bg);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 64px;
+    padding-right: 64px;
+    background-size: 1440px;
+  }
+  .florist_footer_img {
+    width: 1280px;
+    height: 720px;
+  }
+  .logo_footer {
+    width: 370px;
+    height: 126px;
+  }
+  .footer_navigation_list {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 32px;
+  }
+  .footer_socials {
+    display: flex;
+    gap: 12px;
+    margin-left: auto;
+    align-items: center;
+    padding: 0;
+  }
+  .icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+}

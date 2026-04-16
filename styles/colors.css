@@ -1,0 +1,13 @@
+:root {
+  --image_background: #d8d6d3;
+  --button_bg: linear-gradient(to right, #e8e81c, #42ed13);
+  --button_bg_clicked: #4e544d;
+  --arrow_border: #030c0126;
+  --arrow_background: #ffffff;
+  --arrow_button_hv: #d9fbcf;
+  --arrow_button_active: #7af259;
+  --feedback_border: #ccc;
+  --footer_bg: #eeee60;
+  --span_border_line: #030c0126;
+}
+
