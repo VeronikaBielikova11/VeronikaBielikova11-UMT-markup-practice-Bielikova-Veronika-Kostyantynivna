@@ -241,13 +241,15 @@ body {
 .arrow_button {
   width: 48px;
   height: 48px;
-  padding: 12px;
   gap: 16px;
   opacity: 1;
   border-radius: 100px;
   border-width: 1px;
   border: 1px solid var(--span_border_line);
   background-color: var(--arrow_background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .arrow_button:hover,
 .arrow_button:focus-visible {

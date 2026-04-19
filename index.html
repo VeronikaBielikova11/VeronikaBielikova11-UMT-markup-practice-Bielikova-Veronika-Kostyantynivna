@@ -77,12 +77,12 @@
             aria-controls="mobile_menu"
             data-menu_button
           >
-            <svg class="menu_icon menu_icon_burger" aria-label="Open menu">
-              <use href="./icons/menu.svg"></use>
-            </svg>
-
-            <svg class="menu_icon menu_icon_close" aria-label="Close menu">
-              <use href="./icons/burger_clouse.svg"></use>
+            <svg class="menu_icon">
+              <use class="menu_icon_burger" href="./icons/menu.svg"></use>
+              <use
+                class="menu_icon_close"
+                href="./icons/burger_close.svg"
+              ></use>
             </svg>
           </button>
         </div>
@@ -115,15 +115,12 @@
       <section id="introduction" class="section_wrapper">
         <div class="container">
           <div class="introduction_description">
-
-
             <img
               src="./images/flower.png"
               alt="flower"
               width="96"
               height="85"
             />
-
 
             <h2 class="section_title">Our Passion for Floral Artistry</h2>
             <p class="text florist_text">
