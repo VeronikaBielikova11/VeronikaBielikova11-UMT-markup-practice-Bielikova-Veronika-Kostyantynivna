@@ -139,7 +139,7 @@ body {
 }
 .background_content {
   background-color: var(--image_background);
-  background-image: url('../images/hero_bg.jpg');
+  background-image: url('../images/hero_bg@1x.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -147,6 +147,14 @@ body {
   height: 510px;
   margin: 0 auto;
 }
+
+@media (-webkit-device-pixel-ration: 2), (min-resolution: 192dpi){
+  .background_content {
+  background-image: url('../images/hero_bg@2x.jpg');
+}
+}
+
+
 .explore_bouquets_button {
   font-weight: 500;
   font-size: 16px;
@@ -477,8 +485,6 @@ body {
 /* Tablet styles */
 @media screen and (min-width: 768px) {
   .background_content {
-    background-color: var(--image_background);
-    background-image: url('../images/hero_bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
