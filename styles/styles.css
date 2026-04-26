@@ -148,12 +148,11 @@ body {
   margin: 0 auto;
 }
 
-@media (-webkit-device-pixel-ration: 2), (min-resolution: 192dpi){
+@media (-webkit-device-pixel-ration: 2), (min-resolution: 192dpi) {
   .background_content {
-  background-image: url('../images/hero_bg@2x.jpg');
+    background-image: url('../images/hero_bg@2x.jpg');
+  }
 }
-}
-
 
 .explore_bouquets_button {
   font-weight: 500;
