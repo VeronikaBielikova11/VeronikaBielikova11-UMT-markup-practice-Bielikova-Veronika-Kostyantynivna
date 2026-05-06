@@ -638,7 +638,45 @@
         Explore Bouquets
       </button>
     </div>
-
+    <div class="modal_background" id="detail_modal">
+      <div class="modal_container detail_modal_container">
+        <button
+          type="button"
+          id="close_modal_button"
+          class="close_modal_button"
+        >
+          <svg><use href="./icons/burger_clouse.svg"></use></svg>
+        </button>
+        <div class="detail_modal_content_wrapper">
+          <div id="detail_modal_content" class="detail_modal_content"></div>
+          <img
+            class="detail_modal_image"
+            src="./images/perfect-gift-wonderful-flowers@1x.png"
+            srcset="./images/perfect-gift-wonderful-flowers@2x.png 2x"
+            alt="spring bestseller bouquet"
+          />
+          <div class="detail_modal_texts_block">
+            <h3 class="detail_modal_title">Spring Elegance</h3>
+            <p class="detail_modal_text">
+              Each stem is carefully selected to create a bouquet that radiates
+              freshness, elegance, and the gentle charm of spring. Whether
+              you’re celebrating a birthday, sending love, or simply brightening
+              someone’s day, this arrangement is sure to bring warm smiles and
+              lasting impressions.
+            </p>
+            <p class="detail_modal_price">$35</p>
+            <button
+              aria-disabled="true"
+              type="button"
+              class="explore_bouquets_button explore_our_bouquets_button detail_modal_button"
+            >
+              Buy now
+            </button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./js/mobile_menu.js"></script>
   </body>
 </html>
